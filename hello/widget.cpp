@@ -17,5 +17,6 @@ void Widget::on_pushButton_clicked()
 {
     QString str = "hello world! 你好";
     ui->plainTextEdit->appendPlainText(str);
+    ui->label->setText(str);
 }
 
