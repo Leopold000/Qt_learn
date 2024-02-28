@@ -15,6 +15,7 @@ Widget::~Widget()
 
 void Widget::on_pushButton_clicked()
 {
-    QString str = "hello world!";
+    QString str = "hello world! 你好";
     ui->plainTextEdit->appendPlainText(str);
 }
+

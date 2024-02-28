@@ -14,13 +14,6 @@
    <string>Widget</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="0" column="0">
-    <widget class="QPushButton" name="pushButton">
-     <property name="text">
-      <string>hello</string>
-     </property>
-    </widget>
-   </item>
    <item row="0" column="1">
     <spacer name="horizontalSpacer">
      <property name="orientation">
@@ -34,12 +27,43 @@
      </property>
     </spacer>
    </item>
-   <item row="1" column="0" colspan="2">
+   <item row="0" column="0">
+    <widget class="QPushButton" name="pushButton">
+     <property name="text">
+      <string>hello</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="text">
+      <string>退出</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="3">
     <widget class="QPlainTextEdit" name="plainTextEdit"/>
    </item>
   </layout>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Widget</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>696</x>
+     <y>24</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>376</x>
+     <y>310</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
